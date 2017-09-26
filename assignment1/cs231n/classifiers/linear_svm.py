@@ -22,6 +22,7 @@ def svm_loss_naive(W, X, y, reg):
   """
   dW = np.zeros(W.shape) # initialize the gradient as zero
 
+  # https://mlxai.github.io/2017/01/06/vectorized-implementation-of-svm-loss-and-gradient-update.html
   # compute the loss and the gradient
   num_classes = W.shape[1]
   num_train = X.shape[0]
